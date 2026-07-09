@@ -8,7 +8,7 @@
 --line: #216658;
 --bg: rgb(235, 240, 240);
 --link: #004ab8;
---cover: rgba(255, 255, 255, 0.6);        
+--cover: rgba(255, 255, 255, 0.6);
   --bg-image: url('/img/bgd.webp');
   --ifm-code-font-size: 95%;
   --doc-sidebar-width: 300px;
@@ -18,13 +18,6 @@
 :root {
   --img-screen: 25%;
   --img-part: 30%;
-}
-/*动画管理*/
-@keyframes search {/*搜索框展开动画*/
-  from {
-    background-color: var(--pad);
-    border-radius: 20px;
-  }
 }
 /*默认主题*/
 
@@ -41,6 +34,27 @@
   --cover: rgba(0, 0, 0, 0.7);
   --bg-image: url('/img/bg.webp');
 }
+
+.navbar-sidebar__backdrop{
+  background-color: #00000000;
+}
+/*暗主题*/
+
+/*ifm原生变量覆盖*/
+/*颜色*/
+:root{
+  --ifm-toc-border-color: var(--line);/*导航栏收起按钮边框，跳转目录边栏颜色*/
+  --ifm-pre-background: var(--pad);/*预制格式背景色*/ 
+}
+
+/*动画管理*/
+@keyframes search {/*搜索框展开动画*/
+  from {
+    background-color: var(--pad);
+    border-radius: 20px;
+  }
+}
+
 /*背景图遮罩+变暗清除*/
 body::before {
   content: '';
@@ -52,17 +66,6 @@ body::before {
   background-color: var(--cover);
   pointer-events: none;
   z-index: -1;
-}
-
-.navbar-sidebar__backdrop{
-  background-color: #00000000;
-}
-/*暗主题*/
-
-/*ifm原生变量覆盖*/
-/*颜色*/
-:root{
-  --ifm-toc-border-color: var(--line);/*导航栏收起按钮边框，跳转目录边栏颜色*/
 }
 
 /*导航栏，侧边栏，页内导航栏，页脚样式*/  
@@ -117,14 +120,13 @@ blockquote,code,.DocSearch-Button-Placeholder{
 }
 
 code,blockquote,.menu__caret,.DocSearch-Button{
-    background-color: var(--pad);
+  background-color: var(--pad);
+  isolation: isolate;
 }
 
 @media (hover: hover) and (pointer: fine) {
   code,blockquote,.menu__caret,.DocSearch-Button{
-    background-color: var(--pad);
     backdrop-filter: blur(2px);
-    isolation: isolate;
   }
 }
 
@@ -198,13 +200,8 @@ body::after {
 
 @media (hover: hover) and (pointer: fine) {
   body::after {
-    content: '';
     box-shadow: none;
-    position: fixed;
-    inset: 0;
     border: 1px solid var(--line);
-    pointer-events: none;
-    z-index: 9999;
   }
 }
 /*搜索栏*/
@@ -229,8 +226,6 @@ body::after {
     .navbar__search-input.searchInput_YFbd.input_FOTf:focus{
     animation: search 0.3s ease forwards;
     width: 91vw;
-    background-color: var(--bg);
-    border-radius: 0px;
   }
 }
 
