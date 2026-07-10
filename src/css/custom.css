@@ -1,14 +1,14 @@
 /* 默认主题 */
 :root {
---text: #1a4141;
---title: #194a56;
---important: #0068ad;
---tips: #00674f;
---pad: rgba(240, 245, 245, 0.6);
---line: #216658;
---bg: rgb(235, 240, 240);
---link: #004ab8;
---cover: rgba(255, 255, 255, 0.6);
+  --text: #1a4141;
+  --title: #194a56;
+  --important: #0068ad;
+  --tips: #00674f;
+  --pad: rgba(240, 245, 245, 0.6);
+  --line: #216658;
+  --bg: rgb(235, 240, 240);
+  --link: #004ab8;
+  --cover: rgba(255, 255, 255, 0.6);
   --bg-image: url('/img/bgd.webp');
   --ifm-code-font-size: 95%;
   --doc-sidebar-width: 300px;
@@ -223,7 +223,7 @@ body::after {
 }
 
 @media not all and (hover: hover) and (pointer: fine) {
-    .navbar__search-input.searchInput_YFbd.input_FOTf:focus{
+  .navbar__search-input.searchInput_YFbd.input_FOTf:focus {
     animation: search 0.3s ease forwards;
     width: 91vw;
   }
