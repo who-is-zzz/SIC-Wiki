@@ -1,17 +1,12 @@
 /*---正文区视宽---*/
 [class*='docItemContainer'] {
   max-width: 800px;
-  margin: 0;
-  margin-left: auto;
+  margin: 0 auto;
   border: 1px solid var(--line);
   padding: 0 10px;
 }
 
-.col {
-  margin: 0;
-  margin-left: auto;
-}
-
-.row {
-  justify-content: flex-end;
+/*---正文区顶部线性路径导航---*/
+.breadcrumbs {
+  margin-top: 20px;
 }

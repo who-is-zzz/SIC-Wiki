@@ -3,9 +3,13 @@
   --title: #b4d9e3;
   --important: #4faeee;
   --tips: #10ce9e;
-  --pad: rgba(35, 35, 35, 0.4);
   --line: #a0f6e2;
-  --bg: rgb(30, 30, 30);
+  --pad: rgba(35, 35, 35, 0.4);
+  --panel: rgba(45, 45, 45, 0.9);
+  --shadow-panel: 0 2px 12px rgba(0, 0, 0, 0.5); /* 面板：侧栏/TOC/页脚/引用/代码块 */
+  --shadow-lift: 0 4px 20px rgba(0, 0, 0, 0.62); /* 浮层：汉堡菜单/悬浮 */
+  --shadow-overlay: 0 10px 36px rgba(0, 0, 0, 0.72); /* 覆盖层：灯箱等 */
+  --bg: rgb(15, 15, 15);
   --link: #1969e1;
   --cover: rgba(0, 0, 0, 0.7);
   --bg-image: url('/img/bg-dark.webp');

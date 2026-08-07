@@ -1,7 +1,7 @@
 blockquote {
   color: var(--tips);
-  background-color: var(--pad);
-  backdrop-filter: blur(2px);
+  background-color: var(--panel);
+  box-shadow: var(--shadow-panel);
   border: 1px solid var(--line);
   border-left: 4px solid var(--line);
   border-radius: 3px;

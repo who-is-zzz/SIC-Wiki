@@ -8,6 +8,17 @@ th {
   color: var(--text);
 }
 
+/*---正文排版---*/
+.markdown p,
+.markdown li {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-normal);
+}
+
+.markdown p {
+  margin: var(--margin-p);
+}
+
 a {
   color: var(--link);
 }

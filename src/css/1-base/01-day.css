@@ -3,8 +3,12 @@
   --title: #194a56;
   --important: #0068ad;
   --tips: #00674f;
-  --pad: rgba(240, 245, 245, 0.6);
   --line: #216658;
+  --pad: rgba(240, 245, 245, 0.4);
+  --panel: rgba(248, 251, 251, 0.92);
+  --shadow-panel: 0 2px 10px rgba(33, 102, 88, 0.16); /* 面板：侧栏/TOC/页脚/引用/代码块 */
+  --shadow-lift: 0 4px 18px rgba(33, 102, 88, 0.24); /* 浮层：汉堡菜单/悬浮 */
+  --shadow-overlay: 0 10px 32px rgba(33, 102, 88, 0.32); /* 覆盖层：灯箱等 */
   --bg: rgb(235, 240, 240);
   --link: #004ab8;
   --cover: rgba(238, 234, 212, 0.6);

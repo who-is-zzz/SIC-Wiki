@@ -1,0 +1,19 @@
+:root {
+  /*---背景层：页面底层图与蒙版---*/
+  --Z-bg-layer: -2; /* .bg-layer  2-modus/2-layout/05-background.css */
+  --Z-body-before: -1; /* body::before  2-modus/2-layout/05-background.css */
+
+  /*---导航层：移动端TOC < 导航栏，Chromium 汉堡侧栏置顶---*/
+  --Z-toc-mobile: 1; /* .theme-doc-toc-mobile  2-modus/2-layout/07-topnavymobile.css */
+  --Z-navbar: 4; /* 导航栏（经 03-style.css --ifm-z-index-fixed 生效） */
+  --Z-chromium-navbar-sidebar: 9999; /* .is-chromium .theme-layout-navbar-sidebar  3-cover/02-chormcut.css */
+
+  /*---灯箱层：均在 .LB-pad 层叠上下文内，按钮 < 图片 < 底板---*/
+  --Z-LB-button: 2; /* .LB-button  2-modus/1-function/03-lightbox.css */
+  --Z-LB-img: 3; /* .LB-img  2-modus/1-function/03-lightbox.css */
+  --Z-LB-pad: 5; /* .LB-pad（固定定位创建层叠上下文，包裹上面两者）  2-modus/1-function/03-lightbox.css */
+  --Z-chromium-LB-pad: 9999; /* .is-chromium .LB-pad  3-cover/02-chormcut.css */
+
+  /*---置顶层：全局边框---*/
+  --Z-body-after: 9999; /* body::after  2-modus/2-layout/06-borderline.css */
+}

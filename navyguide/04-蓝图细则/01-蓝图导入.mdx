@@ -1,0 +1,36 @@
+# 蓝图导入
+
+下面以MT文件管理器为操作软件，从QQ获得蓝图文件举例导入。
+
+蓝图存储的路径为：
+
+<pre><code>/storage/emulated/0/Android/data/com.StefMorojna.SpaceflightSimulator/files/Saving/Blueprints/</code></pre>
+
+在MT文件管理器的其中一个窗口打开这个路径，另一个窗口则打开QQ存储下载文件的目录：
+
+<pre><code>/storage/emulated/0/Android/data/com.tencent.mobileqq/Tencent/QQfile_recv/</code></pre>
+
+1.4版本的蓝图一般直接为`.bp`格式出现，对于1.5的则是压缩包。
+
+<div className='img-screen'>
+  {/* TODO: 图2-1-1 */}
+</div>
+
+如果为`.bp`格式的文件，直接长按后选择移动即可。
+
+对于压缩包则需要先确认所解压文件的目录级别：
+
+- 1.4版本找到`.bp`格式级别的文件，长按后选择解压到另一窗口路径；
+  <div className='img-screen'>
+    {/* TODO: 图2-1-2 */}
+  </div>
+- 1.5版本找到`blueprint.txt`&`version.txt`文件的上一级文件夹，长按后选择解压到另一窗路径。
+  <div className='img-screen'>
+    {/* TODO: 图2-1-3 */}
+  </div>
+
+<blockquote className='tip'>
+  ※ 若导入不正确，将会出现无法识别/加载蓝图的情况。
+
+  ※ 蓝图在1.4版本中为`.bp`格式。如有需要，需在1.5~1.5.4中用同导入1.4的方法二次保存转至更高版本。无法通过将`.bp`格式文件修改后缀为`.txt`并与Version文件组成文件夹的方式将`.bp`蓝图升至高版本。
+</blockquote>

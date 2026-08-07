@@ -6,7 +6,7 @@
   height: 100vh;
   background: var(--pad);
   backdrop-filter: blur(10px);
-  z-index: 8000;
+  z-index: var(--Z-LB-pad);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,7 +16,7 @@
   max-width: 90%;
   max-height: 90%;
   object-fit: contain;
-  z-index: 10;
+  z-index: var(--Z-LB-img);
 }
 
 .LB-button {
@@ -24,7 +24,7 @@
   padding-bottom: 2px;
   top: 20px;
   right: 30px;
-  z-index: 20;
+  z-index: var(--Z-LB-button);
   display: flex;
   align-items: center;
   justify-content: center;

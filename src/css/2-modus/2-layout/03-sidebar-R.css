@@ -1,14 +1,13 @@
 .col.col--3 {
-  flex: 0 0 250px;
-  max-width: 250px;
-  margin: none;
+  width: var(--sbR);
   padding: 0;
+  margin-left: -16px;
 }
 
 .table-of-contents {
-  background-color: var(--pad);
+  background-color: var(--panel);
   border-left: 3px solid var(--line);
-  backdrop-filter: blur(2px);
+  box-shadow: var(--shadow-panel);
 }
 /*---通用字体颜色设置---*/
 .table-of-contents__link {

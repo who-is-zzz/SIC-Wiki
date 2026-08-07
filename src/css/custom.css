@@ -1,6 +1,7 @@
 @layer base, modus, cover;
 
 /*=====base=====*/
+@import '1-base/00-zindex.css' layer(base);
 @import '1-base/01-day.css' layer(base);
 @import '1-base/02-night.css' layer(base);
 @import '1-base/03-style.css' layer(base);
@@ -35,3 +36,39 @@
 @import '3-cover/02-chormcut.css' layer(cover);
 @import '3-cover/03-ifm-darkchange.css' layer(cover);
 /*=====cover=====*/
+
+/*=====覆写docusaurus默认值=====*/
+
+/*---文本外边距---*/
+.markdown > h1 {
+  margin: var(--margin-h1);
+}
+.markdown > h2 {
+  margin: var(--margin-h2);
+}
+.markdown > h3 {
+  margin: var(--margin-h3);
+}
+.markdown > h4 {
+  margin: var(--margin-h4);
+}
+.markdown > p {
+  margin: var(--margin-p);
+}
+.container {
+  padding: 1rem 0;
+}
+/*---文本外边距---*/
+
+/*---页脚内部容器取消上下内边距---*/
+.footer .container {
+  padding: 0;
+}
+/*---页脚内部容器取消上下内边距---*/
+
+/*---页内导航栏固定---*/
+.theme-doc-toc-desktop {
+  top: calc(var(--head-height) + 1rem);
+  max-height: calc(100vh - var(--head-height) - 1rem);
+}
+/*---页内导航栏固定---*/

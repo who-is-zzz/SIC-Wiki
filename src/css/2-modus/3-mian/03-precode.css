@@ -2,7 +2,8 @@ pre {
   margin: 0;
   padding: 0.3rem;
   border: 1px solid var(--line);
-  backdrop-filter: blur(2px);
+  background-color: var(--panel);
+  box-shadow: var(--shadow-panel);
   white-space: pre-wrap;
   word-break: break-word;
   display: flow-root;
@@ -13,8 +14,7 @@ pre {
 code {
   color: var(--tips);
   border: 1px solid var(--line);
-  background-color: var(--pad);
-  backdrop-filter: blur(2px);
+  background-color: var(--panel);
   border-radius: 0px;
   border-left: 0px solid var(--line);
   border-right: 0px solid var(--line);
@@ -25,6 +25,5 @@ pre code,
 blockquote code {
   background-color: var(--null);
   border: none;
-  backdrop-filter: none;
   max-width: 100%;
 }

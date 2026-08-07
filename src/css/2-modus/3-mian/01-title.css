@@ -5,6 +5,9 @@ h1 {
   border-left: 0;
   border-right: 0;
   border-top: 0;
+  font-size: var(--font-size-h1);
+  line-height: var(--line-height-tight);
+  margin: var(--margin-h1);
 }
 
 h2 {
@@ -14,6 +17,9 @@ h2 {
   border-left: 0;
   border-right: 0;
   border-bottom: 0;
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-tight);
+  margin: var(--margin-h2);
 }
 
 h3 {
@@ -21,18 +27,26 @@ h3 {
   text-align: center;
   border-top: 1px solid var(--line);
   counter-reset: h4-counter;
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height-tight);
+  margin: var(--margin-h3);
 }
 
 h4 {
   color: var(--text);
   border-bottom: 1px solid var(--line);
   max-width: fit-content;
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-tight);
+  margin: var(--margin-h4);
 }
 
 h5,
 h6 {
   color: var(--text);
   text-align: center;
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-tight);
 }
 
 /*---h3，h4有序前缀---*/

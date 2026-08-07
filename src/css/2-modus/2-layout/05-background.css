@@ -7,7 +7,7 @@
   background-position: center;
   background-repeat: no-repeat;
   pointer-events: none;
-  z-index: -2;
+  z-index: var(--Z-bg-layer);
 }
 
 /*---蒙版---*/
@@ -20,5 +20,14 @@ body::before {
   height: 100%;
   background-color: var(--cover);
   pointer-events: none;
-  z-index: -1;
+  z-index: var(--Z-body-before);
+}
+
+/*---非首页隐藏蒙版---*/
+html:not(.plugin-pages) .bg-layer {
+  background-image: var(--bg);
+}
+
+html:not(.plugin-pages) body::before {
+  display: none;
 }
